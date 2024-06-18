@@ -369,11 +369,7 @@ function Timer() {
       console.log("Timer end");
       _status = "init";
       stop();
-      if (_mode !== "setting") {
-        area3.displayWinner();
-      } else {
-        document.getElementById("audio_start").play();
-      }
+      area3.displayWinner();
       return;
     }
   }
